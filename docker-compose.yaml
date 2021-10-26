@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  server1:
+    build: .
+    ports:
+      - "9000:9000"
+    environment:
+      - port=9000
+      - hostname=server1
+
+  server2:
+    build: .
+    ports:
+      - "9001:9001"
+    environment:
+      - port=9001
+      - hostname=server2
+
+  server3:
+    build: .
+    ports:
+      - "9002:9002"
+    environment:
+      - port=9002
+      - hostname=server3
